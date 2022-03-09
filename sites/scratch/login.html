@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Scratch Login</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"
+      rel="stylesheet">
+    <style>
+      html, body {
+      display: flex;
+      justify-content: center;
+      font-family: Roboto, Arial, sans-serif;
+      font-size: 15px;
+      background: #24a2ec;
+      }
+      form {
+      border: 3px solid #24a2ec;
+      }
+      input[type=text], input[type=password] {
+      width: 100%;
+      padding: 16px 8px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      color: white;
+      }
+      button {
+      background-color: #4462ec;
+      color: white;
+      padding: 14px 0;
+      margin: 10px 0;
+      border: none;
+      cursor: grabbing;
+      width: 100%;
+      }
+      h1 {
+      text-align:center;
+      font-size:18;
+        color: white;
+      }
+      button:hover {
+      opacity: 0.8;
+      }
+      .formcontainer {
+      text-align: left;
+      margin: 24px 50px 12px;
+      }
+      .container {
+      padding: 16px 0;
+      text-align:left;
+      }
+      span.password {
+      float: right;
+      padding-top: 0;
+      padding-right: 15px;
+        color: white;
+      }
+      /* Change styles for span on extra small screens */
+      @media screen and (max-width: 300px) {
+      span.password {
+      display: block;
+      float: none;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <form method="POST" action="login.php">
+      <h1><img src="logo.png"
+          alt="error" style="width: 325px; height: 104px;"><br>
+      </h1>
+      <div class="formcontainer">
+        <hr>
+        <div class="container"> <label for="username"><strong>Username</strong></label>
+          <input placeholder="Enter Username" name="username" required="" style="background-color: #24a2ec;"
+            type="text"> <label for="password"><strong>Password</strong></label> <input
+            placeholder="Enter Password" name="password" required="" style="background-color: #24a2ec;"
+            type="password"> </div>
+        <button type="submit">Login</button>
+        <div class="container" style="backgroung-color: white;"> <label style="padding-left: 15px">
+            <input checked="checked" name="remember" type="checkbox"> Remember
+            me </label> <span class="password"><a href="#"> Forgot password?</a></span>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
